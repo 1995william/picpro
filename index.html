@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="pr-br">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/index.css">
+    <script src="assets/js/index.js" defer></script>
     <title>PicPro</title>
 </head>
 
@@ -48,19 +50,19 @@
                 </div>
             </div>
             <ul class="secaoDetalhesConta__opcoesTransacoes">
-                <li class="secaoDetalhesConta__itemTransacao">
+                <li class="secaoDetalhesConta__itemTransacao" data-option="qrcode">
                     <img src="./assets/img/qrcode.png" alt="Ícone QR Code">
                     <p>QR Code</p>
                 </li>
-                <li class="secaoDetalhesConta__itemTransacao">
+                <li class="secaoDetalhesConta__itemTransacao" data-option="pix">
                     <img src="./assets/img/pix.png" alt="Ícone Pix">
                     <p>Pix</p>
                 </li>
-                <li class="secaoDetalhesConta__itemTransacao">
+                <li class="secaoDetalhesConta__itemTransacao" data-option="boleto">
                     <img src="./assets/img/codigo.png" alt="Ícone boleto">
                     <p>Pagar <br> Boleto</p>
                 </li>
-                <li class="secaoDetalhesConta__itemTransacao">
+                <li class="secaoDetalhesConta__itemTransacao" data-option="cobrar">
                     <img src="./assets/img/cobrar-icon.png" alt="Ícone cobrar">
                     <p>Cobrar</p>
                 </li>
@@ -73,13 +75,13 @@
             <div class="container">
 
                 <!-- div selecione forma de agamento -->
-                <div class="secaoTransacao__avisoSelecao">
+                <div class="secaoTransacao__avisoSelecao" data-div="">
                     <p>Selecione a forma de pagamento</p>
                     <img src="./assets/img/banner.png" alt="Banner do picpay">
                 </div>
 
                 <!-- div do qrcode -->
-                <div class="secaoTransacao__qrCode">
+                <div class="secaoTransacao__qrCode invisivel" data-div="qrcode">
                     <img src="./assets/img/qrcode-imagem.png" alt="Imagem QR Code">
                     <p>@mariaporcina</p>
                     <button>Cobre um amigo</button>
@@ -87,7 +89,7 @@
                 </div>
 
                 <!-- div do pix -->
-                <div class="secaoTransacao__pix">
+                <div class="secaoTransacao__pix invisivel" data-div="pix">
                     <img src="./assets/img/pix-logo.png" alt="Logo pix">
                     <div class="secaoTransacao__boxOpcao">
                         <img src="./assets/img/pix1.png" alt="Ícone opção pix">
@@ -100,7 +102,7 @@
                 </div>
 
                 <!-- div do boleto -->
-                <div class="secaoTransacao__boleto">
+                <div class="secaoTransacao__boleto invisivel" data-div="boleto">
                     <img src="./assets/img/boleto.png" alt="Imagem boleto">
                     <h2>Pagar com código de barras</h2>
                     <p>Você pode parcelar em até 12x no cartão ou usar seu saldo em carteira pra pagar à vista.</p>
@@ -108,7 +110,7 @@
                 </div>
 
                 <!-- div de cobrar -->
-                <div class="secaoTransacao__cobrar">
+                <div class="secaoTransacao__cobrar invisivel" data-div="cobrar">
                     <img src="./assets/img/cobrar.png" alt="Ícone cobrar">
                     <h2>Cobrar</h2>
                     <p class="p">Divida a conta com os amigos de forma fácil!</p>
