@@ -60,7 +60,7 @@ main {
 .secaoDetalhesConta__sobreSaldo__p {
   font-size: 23px;
 }
-.olhinho {
+.saldo__icone {
   display: flex;
   align-items: center;
   margin: 5% 0;
@@ -99,9 +99,17 @@ main {
     brightness(94%) contrast(90%);
 }
 .secaoDetalhesConta__itemTransacao:hover {
-  background-color: white;
+  background-color: #fff;
   color: #1f6f54;
   cursor: pointer;
+}
+.opcao {
+  background-color: #fff;
+  color: #1f6f54;
+}
+.marcada {
+  filter: invert(39%) sepia(81%) saturate(372%) hue-rotate(108deg)
+    brightness(94%) contrast(90%);
 }
 .secaoDetalhesConta__itemTransacao p {
   padding: 0 0 50px 30px;
@@ -115,7 +123,7 @@ main {
   border-radius: 40px 40px 0 0;
 }
 .secaoTransacao .container {
-  margin: 0 11%;
+  margin: 3% 11%;
   width: 65%;
   box-sizing: border-box;
 }
@@ -245,6 +253,9 @@ input {
 .secaoTransacao__cobrar .secaoTransacao__boxOpcao strong {
   font-weight: 500;
   font-size: 25px;
+}
+.invisivel {
+  display: none;
 }
 .rodape {
   margin: 1% 0;
