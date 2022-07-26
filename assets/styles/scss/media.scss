@@ -1,0 +1,246 @@
+@media (max-width: 768px) {
+  .cabecalho {
+    min-width: 100%;
+  }
+  .secaoDetalhesConta {
+    margin: 0 auto;
+  }
+  .secaoDetalhesConta__sobreUsuario__perfil {
+    img {
+      height: 60px;
+    }
+  }
+  .secaoDetalhesConta__sobreUsuario {
+    p {
+      font-size: 18px;
+      line-height: 1.8rem;
+    }
+  }
+  .secaoDetalhesConta__icones {
+    img {
+      height: 35px;
+
+      &:nth-child(2) {
+        margin-left: 16px;
+      }
+    }
+  }
+  .secaoDetalhesConta__sobreSaldo {
+    p,
+    strong {
+      font-size: 18px;
+    }
+    img {
+      height: 22px;
+    }
+    button {
+      max-height: 55px;
+      max-width: 180px;
+      border-radius: 15px;
+      font-size: 22px;
+    }
+  }
+  .secaoDetalhesConta__opcoesTransacoes {
+    max-width: 470px;
+    li {
+      max-height: 160px;
+      max-width: 170px;
+      img {
+        max-width: 40px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 30px;
+        padding-left: 20px;
+      }
+    }
+  }
+  .secaoTransacao {
+    justify-content: center;
+  }
+  .secaoTransacao__avisoSelecao {
+    max-width: 440px;
+    margin: 0 auto;
+    p {
+      text-align: center;
+      font-size: 18px;
+      padding: 32px;
+    }
+    img {
+      max-height: 95px;
+    }
+  }
+  .secaoTransacao__qrCode {
+    max-width: 400px;
+    padding: 0;
+    margin: 0 auto;
+
+    p {
+      font-size: 18px;
+    }
+    img {
+      width: 160px;
+      height: 160px;
+    }
+    button {
+      max-height: 70px;
+      max-width: 100%;
+    }
+    strong {
+      font-size: 18px;
+    }
+  }
+  .secaoTransacao__pix {
+    img {
+      max-height: 60px;
+    }
+    p {
+      font-size: 13px;
+      line-height: 20px;
+    }
+    .secaoTransacao__boxOpcao {
+      padding: 8px 0;
+      min-width: 250px;
+    }
+  }
+  .secaoTransacao__boleto {
+    max-width: 425px;
+    img {
+      height: 90px;
+    }
+    h2 {
+      font-size: 20px;
+      margin: 0;
+    }
+    p {
+      font-size: 18px;
+      margin: 12px 0;
+    }
+    input {
+      max-height: 55px;
+      max-width: 360px;
+      margin: 12px 0;
+      font-size: 18px;
+      padding: 0 10px;
+      &::placeholder {
+        font-size: 18px;
+        text-align: center;
+        padding: 0;
+      }
+    }
+  }
+  .secaoTransacao__cobrar {
+    max-width: 425px;
+    margin: 0;
+    img {
+      height: 80px;
+    }
+    h2 {
+      font-size: 20px;
+      margin: 0;
+    }
+    .p {
+      font-size: 16px;
+      margin: 16px 0;
+    }
+    .secaoTransacao__boxOpcao {
+      padding: 8px 0 8px 30px;
+      p {
+        font-size: 16px;
+        line-height: 23px;
+        padding-left: 24px;
+        strong {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  .rodape__menuPrincipal {
+    margin: 0 auto;
+    max-width: 30rem;
+    justify-content: space-between;
+    align-items: center;
+    li {
+      &:nth-child(3) {
+        bottom: 15px;
+        img {
+          min-height: 55px;
+          min-width: 55px;
+          padding-bottom: 5px;
+        }
+      }
+      a {
+        justify-content: center;
+        img {
+          max-height: 30px;
+          max-width: 30px;
+        }
+        p {
+          font-size: 16px;
+          line-height: 2.5rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 570px) {
+  .cabecalho {
+    .container {
+      justify-content: center;
+      margin: 5px 0;
+      img {
+        max-width: 150px;
+      }
+    }
+  }
+  .secaoDetalhesConta {
+    min-width: 320px;
+  }
+  .secaoTransacao__qrCode {
+    margin: 1rem 0;
+    img{
+      max-height: 140px;
+      max-width: 140px;
+    }
+  }
+  .secaoDetalhesConta__sobreUsuario {
+    p {
+      padding-left: 6px;
+    }
+    .secaoDetalhesConta__icones {
+      display: flex;
+      align-items: center;
+    }
+  }
+  .secaoDetalhesConta__sobreSaldo {
+    button {
+      font-size: 18px;
+      max-height: 45px;
+      max-width: 150px;
+    }
+  }
+  .secaoDetalhesConta__opcoesTransacoes {
+    justify-content: center;
+  }
+  .secaoTransacao__avisoSelecao {
+    p {
+      padding: 16px;
+    }
+  }
+  .secaoTransacao__boleto {
+    p {
+      min-width: 100%;
+    }
+  }
+  .secaoTransacao__cobrar {
+   
+    .secaoTransacao__boxOpcao {
+      padding: 6px 8px;
+      min-width: 100%;
+      p {
+        padding-left: 16px;
+        font-size: 14px;
+      }
+    }
+  }
+}
